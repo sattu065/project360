@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Schools" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template if:true={schools.data}>
+                <lightning-datatable 
+                    key-field="id" 
+                    data={students.data}
+                    columns={columns} 
+                    onclick={handleClick}>
+                </lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>
